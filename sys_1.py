@@ -72,6 +72,8 @@ while p == 123:
                 subprocess.run(['nmap',map1])
             elif ara == 'exit' or 'cd ..':
                 break
+            else:
+                print(Back.RED + 'invalid' + Style.RESET_ALL)
     else:
         print(Back.RED + 'Invalid' + Style.RESET_ALL)    
                 
