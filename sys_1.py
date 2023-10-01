@@ -27,8 +27,6 @@ while p == 123:
                 subprocess.run(['ifconfig'])
             elif wifi == 'arp':
                 subprocess.run(['arp-scan', '--localnet'])
-            elif wifi == 'exit' or 'cd ..':
-                break
             elif wifi == 'injek':
                 bssid_pun = input(Fore.YELLOW + "Punto de accseso:" + Style.RESET_ALL)
                 bssid_cli = input(Fore.CYAN + "Cliente de iyeccion:" + Style.RESET_ALL)
@@ -44,6 +42,8 @@ while p == 123:
                     arp: Escanea en busca de dispositivos en tu misma red wifi o en un punto de acceso que as creado
                     exit: Sale de la rama anterior
                     injek: Inicia el proseso de inyeccion de paquetes  """)
+            elif wifi == 'exit' or 'cd ..':
+                break
                     
             else:
                 print(Back.RED + "Invalid" + Style.RESET_ALL)                   
